@@ -12,6 +12,9 @@ Almost the entire aircraft will be made out of frame segments than can then be f
 ## Prototyping and Testing:
 I tested 3 of 4 servos, as I don't have a fourth servo, in the very misleading name of ESP32singleservotest.ino file. Where i connected all the servos to the ESP32 before testing them by running to the max rotation that they be commanded to do, and then running them down to the minimum as fast as possible. I also tested the BLDC motor and the ESC by running the code in ESCtest.ino where the code did work for other people but didn't work for me due to my ESC being burned out and needs to be replaced, without me knowing it. The code is supposed to set up the ESC then run it at full throttle for 15 seconds before shutting down. The ESC and BLDC motor were connected to a Arduino uno R3 because I wasn't ready to connect them to the ESP32. I also tested if ESPNOW will work with my ESP32's so i used the ESPNOW example in the Arduino IDE. They did work and I am currently trying to interface them with the Servo Motors (That's why they aren't in the github yet).
 
+<img width="743" height="252" alt="Screenshot 2026-08-15 200015" src="https://github.com/user-attachments/assets/a62f4b1a-0a8a-4b28-8e83-25eaef3b2361" />
+
+
 ## Software used:
 I used Fusion for students and the Arduino IDE
 
