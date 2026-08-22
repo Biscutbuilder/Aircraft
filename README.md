@@ -17,13 +17,13 @@ I used Fusion for students and the Arduino IDE
 
 ## Credits for some bits of code, and a single library
 The following credits are for bits of code that are and aren't completed currently.
-https://www.youtube.com/watch?v=fHxZaHJgW34
+I used https://www.youtube.com/watch?v=fHxZaHJgW34 to learn how to use a servo with a joystick.
 
 
-https://www.youtube.com/watch?v=qOzE5F5vFGs&t=24s
+I used https://www.youtube.com/watch?v=qOzE5F5vFGs&t=24s to learn how to use a bldc motor with arduino.
 
 
-https://github.com/jkb-git/ESP32Servo
+Because you cannot use the normal servo library with a ESP32, i used https://github.com/jkb-git/ESP32Servo to control the servos.
 
 
 
