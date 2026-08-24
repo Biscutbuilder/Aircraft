@@ -3,6 +3,7 @@ This project is a fixed-winged aircraft that will be controlled by 2 ESP32's usi
 
 # FILE GUIDE!!!
 The production folder contains 2 more folders, code and CAD, CAD contains .step files and code contains my code.
+ESP32singleservotest.ino has a very misleading name! It tests 3 servos, not one, sorry.
 
 ## Electronic parts:
 Using ESPNOW the ESP32 inside of the aircraft will receive and execute inputs from the ESP32 on the ground that will act as a controller. The ESP32 on the ground will take inputs from a Joystick and a Linear potentiometer before relaying those inputs to the Aircraft. The ESP32 inside of the aircraft will use 4 servos to control the axis of flight. 2 servos will control the allerions allowing the aircraft to control roll, 1 servo will control the rudder allowing the aircraft to control yaw, and 1 servo will control the elevators allowing the aircraft to control pitch. The ESP32 will also have a ESC and BLDC motor connected which will act as the engine. The BLDC motor will have a 12 inch in diameter propeller connected. The entire Aircraft will be powered by a 3 cell Lipo battery, which should give the Aircraft 45 minutes of continues flight at full throttle.
