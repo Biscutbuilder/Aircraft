@@ -1,9 +1,12 @@
 # ESP32 Aircraft
 This project is a fixed-winged aircraft that will be controlled by 2 ESP32's using ESPNOW to communicate, one ESP32 wil be a input and communicate with the ESP32 in the air, telling it what to do.
 
-# FILE GUIDE!!!
+## FILE GUIDE.
 The production folder contains 2 more folders, code and CAD, CAD contains .step files and code contains my code.
 ESP32singleservotest.ino has a very misleading name! It tests 3 servos, not one, sorry.
+
+## BOM information
+Here are my reasons for each item in the BOM. For the accelerometer, it is in the BOM so that I can record the maximum speed of the Aircraft. The ESP32 is in the BOM because i am currently using a ESP32 WROOM-DA and a Arduino Nano ESP32. The Arduino Nano has a reduced ESPNOW range. Both jumper wires are inside the BOM because I need jumper wires to connect the different components of the aircraft. The BLDC and ESC are on the BOM because my BLDC motor has damaged coils and my ESC is burned out and came damaged when I ordered it. The Lipo battery adapters are in the BOM because my current Lipo battery is not compatible without adapters with the ESC in the BLDC and ESC kit. The Linear potentiometer is in the BOM because it will be connected to the ESP32 on the ground that controls the aircraft, and will control throttle, as norma potentiometers are hard to keep track of the its position visually. The Joysticks are in the BOM to send inputs to the ground ESP32 and will control the flight surfaces on the aircraft via ESPNOW. The breadboard is in the BOM because everything will be built on breadboards to ensure that any changes that need to be made to the circuitry can be made fast and without soldering (im not allowed to solder anymore). The BOM files is in BOM - Sheet1.csv
 
 ## Electronic parts:
 Using ESPNOW the ESP32 inside of the aircraft will receive and execute inputs from the ESP32 on the ground that will act as a controller. The ESP32 on the ground will take inputs from a Joystick and a Linear potentiometer before relaying those inputs to the Aircraft. The ESP32 inside of the aircraft will use 4 servos to control the axis of flight. 2 servos will control the allerions allowing the aircraft to control roll, 1 servo will control the rudder allowing the aircraft to control yaw, and 1 servo will control the elevators allowing the aircraft to control pitch. The ESP32 will also have a ESC and BLDC motor connected which will act as the engine. The BLDC motor will have a 12 inch in diameter propeller connected. The entire Aircraft will be powered by a 3 cell Lipo battery, which should give the Aircraft 45 minutes of continues flight at full throttle.
